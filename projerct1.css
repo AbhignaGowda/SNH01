@@ -1,0 +1,8 @@
+/* .bck{
+    position:fixed;
+    z-index: -1;
+    background-size: cover;
+} */
+*{
+    background-color: black;
+}

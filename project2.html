@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Supply Chain Transparency </title>
+  <script src="https://cdn.jsdelivr.net/npm/web3@1.3.5/dist/web3.min.js"></script>
+  <script src="https://rawgit.com/schmich/instascan-builds/master/instascan.min.js"></script>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+</head>
+<style>
+  body{
+    color: white;
+    background-color: black;
+    background-image: url(/project1/bac.jpg);
+  }
+
+h2{
+  margin-bottom: 50px;
+  color: gray;
+
+
+} 
+
+.container{
+  margin-top: 100px;
+  margin-left: 150px;
+}
+.product{
+  border: 2px solid rgb(208, 255, 0);
+  border-radius: 20px;
+
+}
+.img img{
+  width: 30%;
+  height: auto;
+  position: relative;
+  margin-left: 550px;
+  margin-bottom: 60px;
+}
+
+
+</style>
+<body>
+  <div class="container">
+    <div class="row">
+        <div class="one col-lg-6">
+        
+        
+        <label for="/server">
+          
+          
+          <h2>Store Product Information</h2>
+          <label for="updateProductId">Product ID:</label>
+          <input type="text" id="updateProductId" class="product" placeholder="Enter your product id"><br><br>
+          
+          <label for="location">Location:</label>
+          <input type="text" id="location" class="product" placeholder="enter the location"><br><br>
+          
+          <label for="timestamp">Timestamp:</label>
+          <input type="text" id="timestamp" class="product" placeholder="enter time stamp"><br><br>
+          
+          <label for="reason">Reason:   </label>
+          <input type="text" id="reason" class="product" placeholder="enter details" ><br><br>
+          
+          <button class="btn btn-success" onclick="updateProductStatus()">Update Product Status</button><br><br>
+        </label>
+      </div>
+      <div class="two col-lg-6">
+        
+        <h2>Track Product Movement</h2>
+        <label for="trackProductId">Enter Product ID:</label>
+        <input type="text" id="trackProductId" class="product" placeholder="Enter your product id"><br><br>
+        <button class="btn btn-success" onclick="getProductInfo()">Track Product</button><br><br>
+      </div>
+    </div>
+  </div>
+  <div class="img">
+       <img src="/project1/project2/img.png" alt="/image">
+  </div>
+  
+
+
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
